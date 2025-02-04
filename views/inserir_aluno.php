@@ -5,17 +5,17 @@
 <h1>Inserir novo aluno</h1>
 <form method="POST" action="processa_aluno.php">
     <br>
-    <label>Nome aluno:</label>
+    <label class="badge text-bg-secondary">Nome aluno:</label>
     <br>
-    <input type="text" name="nome_aluno" placeholder="Insira o nome do aluno">
-    <br>
-    <br>
-    <label>Data de nascimento</label>
-    <br>
-    <input type="text" name="data_nascimento" placeholder="Insira a data de nascimento">
+    <input class="form-control" type="text" name="nome_aluno" placeholder="Insira o nome do aluno">
     <br>
     <br>
-    <input type="submit" value="Inserir aluno">
+    <label class="badge text-bg-secondary">Data de nascimento</label>
+    <br>
+    <input class="form-control" type="text" name="data_nascimento" placeholder="Insira a data de nascimento">
+    <br>
+    <br>
+    <input class="btn btn-success" type="submit" value="Inserir aluno">
 </form>
 
 <?php 
@@ -32,17 +32,17 @@
 <form method="POST" action="edita_aluno.php">
     <input type="hidden" name="id_aluno" value="<?php echo $linha["id_aluno"]; ?>">
     <br>
-    <label>Nome aluno:</label>
+    <label class="badge text-bg-secondary">Nome aluno:</label>
     <br>
-    <input type="text" name="nome_aluno" value="<?php echo $linha["nome_aluno"]; ?>" placeholder="Insira o nome do aluno">
-    <br>
-    <br>
-    <label>Data de nascimento</label>
-    <br>
-    <input type="text" name="data_nascimento" value="<?php echo $linha["data_nascimento"]; ?>" placeholder="Insira a data de nascimento">
+    <input class="form-control" type="text" name="nome_aluno" value="<?php echo $linha["nome_aluno"]; ?>" placeholder="Insira o nome do aluno">
     <br>
     <br>
-    <input type="submit" value="Editar aluno">
+    <label class="badge text-bg-secondary">Data de nascimento</label>
+    <br>
+    <input class="form-control" type="text" name="data_nascimento" value="<?php echo $linha["data_nascimento"]; ?>" placeholder="Insira a data de nascimento">
+    <br>
+    <br>
+    <input class="btn btn-success" type="submit" value="Editar aluno">
 </form>
 
 <?php 

@@ -13,7 +13,6 @@ body {
 header {
     height: 90px;
     background-color: #262626;
-    padding: 10px 0;
 }
 
 footer {
@@ -26,24 +25,27 @@ footer {
 }
 
 /* class */
-.container {
+
+/* .container {
     margin: 0 auto;
     width: 960px;
 }
 
+*/
+
 /* id */
 #conteudo {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 #menu {
     float: right;
-    padding: 35px 0;
+    padding: 32px 0;
 }
 
 #menu a {
     text-decoration: none;
-    padding: 45px 50px;
+    padding: 37px 40px;
     color: #e3e3e3;
     text-shadow: 1px 1px 1px #111;
 }
